@@ -1,5 +1,5 @@
 django==5.1
-PIL
+pillow
 asgiref
 sqlparse
 tzdata
