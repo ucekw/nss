@@ -2,21 +2,19 @@
     "version": 2,
     "builds": [
       {
-        "src": "./nsspr/wsgi.py",
+        "src": "nsspr/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "15mb",
           "runtime": "python3.9"
         }
-      },
-      {
-        "src": "build_files.sh",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "staticfiles"
-        }
       }
-    ],
-    "outputDirectory": "staticfiles"
+    ], 
+    "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "nsspr/wsgi.py"
+      }
+  ]
 }
 
