@@ -1,0 +1,6 @@
+django==5.1
+PIL
+asgiref
+sqlparse
+tzdata
+gunicorn
