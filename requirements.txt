@@ -3,3 +3,4 @@ pillow
 asgiref
 sqlparse
 tzdata
+whitenoise
