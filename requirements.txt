@@ -3,4 +3,3 @@ pillow
 asgiref
 sqlparse
 tzdata
-gunicorn
